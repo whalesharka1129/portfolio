@@ -1,11 +1,13 @@
 import Navbar from "@/component/Navbar/page";
-import Image from "next/image";
+import Dashboard from "./Dashboard/Dashboard";
+
 
 export default function Home() {
   return (
     <div>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main >
         <Navbar/>
+        <Dashboard />
       </main>
     
     </div>
