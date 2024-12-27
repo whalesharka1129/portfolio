@@ -7,7 +7,7 @@ export default function CommonButton({content}: CommonButtonProps) {
   return (
     <div>
       <Link href="/contact-us" passHref>
-        <button className="bg-[#008DF1] text-white text-[14px] py-[15px] px-[30px] rounded-[100px]">
+        <button className="bg-[#008DF1] text-white text-[14px] py-[15px] px-[30px] rounded-full">
           {content}
         </button>
       </Link>
