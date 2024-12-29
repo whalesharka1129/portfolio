@@ -1,3 +1,4 @@
+import Video from "@/app/video/video";
 import successone from "@/assets/Dashboard/success-stories14.jpg";
 import CommonButton from "@/component/Navbar/button";
 import Image from "next/image";
@@ -47,16 +48,7 @@ export default function Projects() {
             </p>
             <CommonButton content="VIEW WORK" />
           </div>
-          {/* <video width="320" height="240" controls preload="none">
-            <source src="/images/success-stories2.mp4" type="mp4" />
-            <track
-              src="/path/to/captions.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-            />
-            Your browser does not support the video tag.
-          </video> */}
+          <Video />
         </div>        
       </div>
       <div className="border-b-[1px] border-[gray] opacity-[100%]"></div>
