@@ -54,7 +54,7 @@ export default function Capability(){
               className="w-[236px] h-[78px]"
             />
             </div>
-            <CommonButton content="ViEW ALL SERVICES" />
+            <CommonButton content="ViEW ALL SERVICES &gt;" />
           </div>
           <div className="flex gap-[120px] px-[40px] py-[50px]">
             {

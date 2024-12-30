@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface SubTestimonialProps {
-    image: string;
+    image: StaticImageData;
     description: string;
     Name : string;
     role : string;
@@ -9,9 +9,9 @@ interface SubTestimonialProps {
 
 export default function SubTestimonial ( {image, description, Name, role} : SubTestimonialProps){
     return(
-        <div>
-            <p className="italic text-[18px] font-medium color-[#4C4C4C]">{description}</p>
-           <div>
+        <div className="flex flex-col justify-center items-center">
+            <p className="italic text-[18px] font-medium color-[#4C4C4C] w-[1275px]">{description}</p>
+           <div className="flex gap-[20px] mt-[71px] w-[1275px] justify-start ">
             <Image 
              src={image}
              alt=""

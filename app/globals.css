@@ -14,6 +14,51 @@
   }
 }
 
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translate3d(0, -100%, 0);}
+  100%{ opacity: 1; transform: translateZ(0);}
+}
+
+/* @keyframes fadeInDown {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+} */
+
+@keyframes fadeInUp {
+  
+  0% { opacity: 0; transform: translate3d(0, -100%, 0);}
+  100%{ opacity: 1; transform: translateZ(0);}
+}
+@keyframes slideInFromBottom {
+  0% {
+      transform: translateY(100%); /* Start off-screen below */
+      opacity: 0; /* Start invisible */
+  }
+  100% {
+      transform: translateY(0); /* Move into view */
+      opacity: 1; /* Fully visible */
+  }
+}
+@keyframes slideInFromBottomLanding {
+  0% {
+      transform: translateY(100%); /* Start off-screen below */
+      opacity: 0; /* Start invisible */
+  }
+  50% {
+      transform: translateY(100%); /* Move halfway up */
+      opacity: 0; /* Partially visible */
+  }
+  100% {
+      transform: translateY(0); /* Move into view */
+      opacity: 1; /* Fully visible */
+  }
+}
 body {
   color: var(--foreground);
   background: var(--background);
@@ -21,3 +66,31 @@ body {
   font-size: 62.5%;
 }
 
+.navbar {
+  background-color: transparent; /* Default background */
+  position: relative; /* Change to relative for initial positioning */
+  top: 0; 
+  z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.navbar-fixed-to {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; /* Ensure it stays above other content */
+  background-color: rgba(255, 255, 255, 1); /* Solid background color */
+  box-shadow: 0 2px 28px rgba(0, 0, 0, 0.09); /* Shadow for depth */
+  animation: fadeInDown 0.5s ease-in-out; /* Optional animation */
+}
+
+/* Optional: Define the fadeInDown animation if needed */
+
+/* Class to apply the animation */
+.slide-in-bottom {
+  animation: slideInFromBottom 1.5s ease forwards; /* Apply the animation */
+}
+.slide-in-bottom-landing {
+  animation: slideInFromBottomLanding 2s ease forwards; /* Apply the animation */
+}
