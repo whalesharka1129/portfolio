@@ -32,7 +32,7 @@ export default function Projects() {
             <CommonButton content="VIEW WORK" />
           </div>
         </div>
-        <div className="flex items-center gap-[20px]">
+        <div className="flex items-center gap-[20px] mt-[70px]">
           <div className="flex flex-col justify-around gap-[30px]">
             <p className="uppercase text-[#008DF1] text-[16px] font-semibold">
               Trainer Friendt
@@ -48,7 +48,9 @@ export default function Projects() {
             </p>
             <CommonButton content="VIEW WORK" />
           </div>
-          <Video />
+          <div className="mt-[-70px]">
+             <Video />
+          </div>
         </div>        
       </div>
       <div className="border-b-[1px] border-[gray] opacity-[100%]"></div>

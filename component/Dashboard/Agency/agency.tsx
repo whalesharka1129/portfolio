@@ -30,9 +30,9 @@ const AgencyArr : Array<{ agencyimage : StaticImageData, topic : string, content
 
 export default function Agency(){
     return(
-        <div className="py-[100px] flex flex-col justify-center items-center">
+        <div className="slide-in-bottom py-[100px] flex flex-col justify-center items-center">
 
-             <h1 className="flex justify-center items-center mr-[620px] text-black font-semibold text-[25px] md:text-[30px] lg:text-[32px] xl:text-[36px] leading-[1.2] max-w-[596px]">
+             <h1 className=" flex justify-center items-center mr-[620px] text-black font-semibold text-[25px] md:text-[30px] lg:text-[32px] xl:text-[36px] leading-[1.2] max-w-[596px]">
                 The only agency you need for all 
                 your development and digital 
                 marketing needs!

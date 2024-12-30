@@ -1,3 +1,5 @@
+'use client'
+
 import Agency from "@/component/Dashboard/Agency/agency";
 import Brand from "@/component/Dashboard/Brands/Brands";
 import Capability from "@/component/Dashboard/Capabilities/Capabilities";
@@ -8,6 +10,7 @@ import Projects from "@/component/Dashboard/Projects/project";
 import Testimonials from "@/component/Dashboard/Testominals/Testominals";
 
 export default function Dashboard(){
+    
     return(
         <div>
             <Landing />

@@ -36,7 +36,7 @@ export default function Process (){
                 <p className="text-black uppercase text-[15px] md:text-[17px] font-medium mb-[15px]">OUR PROCESS</p>
                 <h1 className="text-black font-semibold text-[25px] md:text-[30px] lg:text-[32px] xl:text-[36px] leading-[1.2] max-w-[648px] text-center">The Art of Building Great Software: Our Development Process</h1>
             </div>
-            <div className="flex justify-center items-center gap-[50px]">
+            <div className="flex justify-center items-center gap-[0px]">
                <div className="flex flex-col gap-[30px]  pr-[160px]">
                  {
                     AgencyArr.map((item, idx : number )=>(
